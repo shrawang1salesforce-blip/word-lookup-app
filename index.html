@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f7f5f0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5f0" />
     <title>Wordwise — a quieter kind of dictionary</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -24,7 +27,10 @@
       <section class="intro" aria-labelledby="page-title">
         <p class="eyebrow">THE WORD, AND EVERYTHING AROUND IT</p>
         <h1 id="page-title">Find the right <em>word.</em></h1>
-        <p class="intro-copy">Meanings, pronunciations, and the small details that make a word stick.</p>
+        <p class="intro-copy">
+          Meanings, pronunciations, and the small details that make a word
+          stick.
+        </p>
 
         <form class="search-form" id="search-form" role="search">
           <label class="visually-hidden" for="word-input">Look up a word</label>
@@ -38,11 +44,14 @@
             autocapitalize="none"
             spellcheck="false"
             required
-          >
-          <button type="submit">Look it up <span aria-hidden="true">↗</span></button>
+          />
+          <button type="submit">
+            Look it up <span aria-hidden="true">↗</span>
+          </button>
         </form>
 
-        <p class="try-a-word">A good place to start:
+        <p class="try-a-word">
+          A good place to start:
           <button class="suggestion" type="button">sonder</button>
           <span aria-hidden="true">·</span>
           <button class="suggestion" type="button">petrichor</button>
@@ -52,7 +61,12 @@
       </section>
 
       <section class="result-area" aria-label="Dictionary results">
-        <p class="status-message" id="status-message" role="status" aria-live="polite">
+        <p
+          class="status-message"
+          id="status-message"
+          role="status"
+          aria-live="polite"
+        >
           <span class="status-dot" aria-hidden="true"></span>
           Your next favourite word is just a search away.
         </p>
@@ -61,8 +75,12 @@
     </main>
 
     <footer class="footer">
-      <span>Made for the love of a good word.</span>
-      <span>Definitions via <a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">Free Dictionary API</a></span>
+      <span
+        >Definitions via
+        <a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer"
+          >Free Dictionary API</a
+        ></span
+      >
     </footer>
   </body>
 </html>
